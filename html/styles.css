@@ -1,0 +1,11 @@
+.active {
+    color: aquamarine;
+}
+.passive {
+    color: burlywood;
+}
+.flex {
+    display:flex;
+    gap: 15px;
+    flex-direction: column;
+}
