@@ -1,0 +1,142 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.wrapper {
+    display: flex;
+    border: 2px solid black;
+    width: 747px; 
+    height: 870px;
+    padding: 20px;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.actors {
+    display: flex;
+    align-self: flex-start;
+}
+.actors_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 16px;
+}
+.actor_container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.name {
+    width: 136px;
+    height: 20px;
+    margin: 0;
+    flex: 1;
+    font-size: large;
+    margin-top: 10px;
+}
+.rating_block {
+    width: 125px;
+    height: 25px;
+  }
+  .rating_block input[type="radio"] {
+    display: none;
+  }
+  .label_rating {
+    float: right;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background: url(/taskMealReview/img/rating.png) no-repeat 50% 0;
+    cursor: pointer;
+  }
+  /*Пишем правила смены положения background-а*/
+  .rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
+  .rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
+  .rating_block input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+  {
+    background-position: 50% -25px;
+  }
+  .thoughts {
+    display: flex;
+    width: 390px;
+    height: 56px;
+    margin-left: 100px;
+    margin-top: 5px;
+  }
+  
+.summary_review {
+    display: flex;
+    gap: 30px;
+}
+input {
+    padding-left: 10px;
+}
+.line {
+    border: 1px solid black;
+
+}
+.taboo {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+img {
+    border-radius: 5px;
+}
+#summary_review {
+    resize: none;
+}
+.inputbottom {
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+}
+#input_bottom {
+    width: 98%;
+    padding: 5px;
+    z-index: 2;
+}
+.label {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    z-index: 5;
+    background-color: white;
+}
+.pen {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    z-index: 0;
+}
+.checkbox {
+    display: flex;
+    gap: 10px;
+}
+.submit {
+    background-color: rgb(35, 150, 35);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+}

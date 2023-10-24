@@ -5,7 +5,7 @@
     color: burlywood;
 }
 .flex {
-    display:flex;
+    display:inline-flex;
     gap: 15px;
     flex-direction: column;
 }
