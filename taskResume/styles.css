@@ -1,0 +1,212 @@
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.wrapper {
+    display: flex;
+    
+    width: 1280px; 
+    height: 1399px;
+    padding: 0px;
+    flex-direction:row;
+}
+.leftpanel {
+    display: flex;
+    width: 370px;
+   
+    margin-top: 128px;
+    background-color: #E0EBFE;
+    gap: 40px;
+    flex-direction: column;
+}
+.photo {
+    margin-top: 40px;
+}
+.contacts {
+    display: flex;
+    justify-content: left;
+    padding-left: 40px;
+    flex-direction: column;
+}
+.contactsheader {
+    display: flex;
+
+    padding-top: 0px;
+}
+.contactsphone {
+    display: flex;
+    gap: 10px;
+}
+.contactsgmail {
+    display: flex;
+    gap: 10px;
+}
+#LableC {
+    font-weight: 700;
+}
+#LabelE {
+    font-weight: 700;
+}
+.tskills {
+    display: flex;
+    padding-left: 40px;
+    flex-direction: column;
+}
+.sskills {
+    display: flex;
+    padding-left: 40px;
+    flex-direction: column;
+}
+.resume {
+    display: flex;
+    flex-direction: column;
+    margin-left: 127px;
+}
+.FrontEndDev {
+    margin-top: 150px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0px;
+    gap: 0px;
+}
+.headertaras {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 19px;
+    margin-bottom: 0px;
+}
+.aboutme {
+    color: #595959;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    margin-top: 29px;
+    margin-bottom: 0px;
+    margin-right: 257px
+}
+.border {
+    width: 1200px;
+    height: 1319px;
+    position: absolute;
+    z-index: -1;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.projectsheader {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 63px;
+    margin-bottom: 0px;
+}
+.projectslinks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9px;
+    gap: 8px;
+}
+.projectslink1 {
+    display: flex;
+    
+}
+.projectslink2 {
+    display: flex;
+   
+}
+.projectslink3 {
+    display: flex;
+  
+}
+.link1 {
+    margin-left: 16px;
+}
+.wExperience {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 51px;
+    margin-bottom: 0px;
+}
+.FrontEndDev1 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: baseline;
+    margin-bottom: 0px;
+}
+.freelance {
+    display: flex;
+    margin-left: 4px;
+    color: #6D9BF5;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.expdate {
+    color: #A8A8A8;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 11px;
+    margin-bottom: 0px;
+}
+.line {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.frontendhistory {
+    margin-right: 257px;
+    color: #595959;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+.FrontEndDev2 {
+    display: flex;
+    margin-left: 0px;
+    color: #6D9BF5;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+body {
+    height: 1500px;
+}
