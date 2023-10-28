@@ -9,7 +9,7 @@ for (const iterator of array) {
 }
 
 for (const index in array) {
-	//проходит по элементам моссива и берёт индекс
+	//проходит по элементам мaссива и берёт индекс
 	const element = array[index];
 }
 
