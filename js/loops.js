@@ -24,3 +24,4 @@ do {
 	console.log(step1);
 	++step1;
 } while (step1 < 0);
+
