@@ -7,10 +7,10 @@ console.log(Math.max(...[1, 2, 3, 4, 5])) //достает самое больш
 console.log(Math.min(...[1, 2, 3, 4, 5])) //достает самое меньшее значение из массива
 console.log(Math.sqrt(16)) //принимает число и возвращает его квадратный корень
 console.log(Math.abs(-10)) //принимает минусовое число, возвращает плюсовое
-console.log("Ya Pidoras")
+
 
 function pow(a,b) {
     return a ** b
 }
 let number = 12
-console.log(number.toString())
+console.log(pow(2, 4));
