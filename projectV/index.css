@@ -1,0 +1,107 @@
+.container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+.wrapper {
+	display: flex;
+	background-color: aliceblue;
+	width: 1100px;
+	height: 1300px;
+	padding: 0px;
+	margin-top: 25px;
+	flex-direction: row;
+	border: 1px solid black;
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+	z-index: -1;
+}
+.background {
+	position: absolute;
+	z-index: -3;
+}
+.leftpanel {
+	display: flex;
+	flex-direction: column;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+	gap: 0px;
+	height: 100%;
+	width: 300px;
+    background-color: pink;
+}
+.header {
+	padding: 50px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #333;
+	background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
+    border-radius: 0 0 85% 85% / 30%;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.write {
+	display: flex;
+	padding-top: 50px;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    justify-content: center;
+    padding-top: 100px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+}
+#input {
+	display: flex;
+	z-index: 1;
+    color: #fff;
+    line-height: 1;
+    border-style: none;
+    outline: none;
+    height: calc(1em + 1.6em + 0.5em);
+    width: 100%;
+    padding: 0.8em 1em;
+    border: 0.25em solid transparent;
+    background-image: linear-gradient(#b726ca, #cfbfce),
+      linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 1.8em;
+    background-size: 200% 100%;
+    transition: background-position 0.8s ease-out;
+    font-size: 20px;
+    font-family: "Dancing Script", cursive;
+}
+h1 {
+	font-family: "Dancing Script", cursive;
+}
+.inputdiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.rightpanel {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+#list {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    justify-content: center;
+    font-family: "Dancing Script", cursive;
+    
+}
+#button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+

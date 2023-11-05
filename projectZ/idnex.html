@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/projectZ/index.css" />
+	</head>
+	<body>
+		<ul id="list"></ul>
+
+		<button onclick="remove()">remove</button>
+		<input type="text" id="input" />
+		<script>
+			let list = document.getElementById(`list`);
+			let input = document.getElementById(`input`);
+			const arr = [`red`, `blue`, `pink`, `orange`]; // bez massiva shob krasiva
+			arr.forEach((item, i) => {
+				let li = document.createElement(`li`);
+				li.innerText = item;
+				li.style.color = item;
+				list.appendChild(li);
+			});
+			function add(item) {
+				if (item.length > 5) {
+					let li = document.createElement(`li`);
+					li.innerText = item;
+					li.style.color = item;
+					li.style.cursor = `pointer`;
+					li.addEventListener(`click`, () => li.remove());
+					list.appendChild(li);
+					input.value = ``;
+				}
+			}
+			function remove() {
+				const lastElement = list.children[list.children.length - 1].remove();
+			}
+
+			input.addEventListener(
+				`keydown`,
+				(e) => e.key === `Enter` && submit(event)
+			);
+
+			function submit(event) {
+				add(event.target.value);
+			}
+		</script>
+	</body>
+</html>

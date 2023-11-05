@@ -32,3 +32,4 @@ function middle(array) {
 	let index = Math.floor(array.length / 2);
 	return array[index];
 }
+
