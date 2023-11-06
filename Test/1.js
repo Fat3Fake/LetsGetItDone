@@ -246,4 +246,3 @@ function maps(x) {
 	});
 }
 let numbers = [1, 2, 3];
-console.log(maps(numbers))
