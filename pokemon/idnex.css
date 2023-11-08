@@ -1,0 +1,18 @@
+#pokemon-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#pokemons {
+    display: flex;
+    font-size: 30px;
+    align-self: center;
+    font-family: "Dancing Script", cursive;
+    text-shadow: 1px 1px 1px #333;
+    color: antiquewhite;
+}
+body { 
+    background-color: aqua;
+}
