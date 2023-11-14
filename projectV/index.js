@@ -1,23 +1,42 @@
 let list = document.getElementById(`list`);
 let input = document.getElementById(`input`);
+let storage = window.localStorage.getItem(`key`);
+if (!storage) {
+	window.localStorage.setItem(`key`, JSON.stringify([]));
+	storage = [];
+} else {
+	storage = JSON.parse(storage);
+	render();
+}
+
+function render() {
+	if (storage.length === 0) {
+		let li = document.createElement(`li`);
+		li.innerText = `storage is empty`
+		list.appendChild(li);
+		return 
+	}
+	list.innerHTML = ``
+	storage.forEach((item, index) => {
+		let li = document.createElement(`li`);
+		li.innerText = item;
+		li.style.cursor = `pointer`;
+		li.style.color = item;
+		li.addEventListener(`click`, () => remove(index));
+		list.appendChild(li);
+	});
+}
+
 
 function add(item) {
-	if (item.length >= 5) {
-		let li = document.createElement(`li`);
-		li.className = `glyphicon glyphicon-remove`;
-		li.innerText = item;
-		li.style.cursor = `pointer`
-		li.style.color = item;
-		li.addEventListener(`click`, () => li.parentNode.removeChild(li));
-		list.appendChild(li);
-		input.value = ``;
-		if (list.children.length > 10) {
-			li.parentNode.removeChild(li);
-		}
-	}else {window.alert(`TEXT MUST BE 5 AND MORE SYMBOLS YOU FUCKING DUMMASS`);}
+	storage.push(item)
+	toStorage();
+	render();
 }
-function remove() {
-	const lastElement = list.children[list.children.length - 1].remove();
+function remove(index) {
+	storage.splice(index, 1)
+	toStorage()
+	render()
 }
 
 input.addEventListener(`keydown`, (e) => e.key === `Enter` && submit(event));
@@ -25,3 +44,55 @@ input.addEventListener(`keydown`, (e) => e.key === `Enter` && submit(event));
 function submit(event) {
 	add(event.target.value);
 }
+
+function toStorage() {
+	window.localStorage.setItem(`key`, JSON.stringify(storage));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//let arr = [`test`, `pisyu`, `pinus`];
+//window.localStorage.setItem(`key`, JSON.stringify(arr))
+//let aboba = window.localStorage.getItem(`key`);
+//console.log(JSON.parse(aboba))

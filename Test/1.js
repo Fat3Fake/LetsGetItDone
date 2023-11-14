@@ -246,3 +246,26 @@ function maps(x) {
 	});
 }
 let numbers = [1, 2, 3];
+
+function alphabetPosition(text) {
+	const alphabet = "abcdefghijklmnopqrstuvwxyz";
+	const textLowerCase = text.toLowerCase();
+	let result = "";
+
+	for (let i = 0; i < textLowerCase.length; i++) {
+		const char = textLowerCase[i];
+		if (alphabet.includes(char)) {
+			const position = alphabet.indexOf(char) + 1;
+			result += position + " ";
+		}
+	}
+
+	
+	return result.trim();
+}
+
+function abbrevName(name) {
+	let name1 = name.split(` `)
+	return name1[0].slice(0)
+}
+console.log(abbrevName(`Dick Pickson`))

@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
-    <ol class="list"></ol>
-    <div id="background"></div>
-    <script>
-       let bck = document.getElementById(`background`)
-        let img = document.createElement(`img`)
-        img.src = `/projectV/img/e673cdf39d09d48dc5cc4c3a29c69b9b.jpg`
-        
-    </script>
-</select>
+
+<h2>JavaScript Prompt</h2>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text;
+  let person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
 </body>
 </html>

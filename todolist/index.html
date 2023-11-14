@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/todolist/index.css" />
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="wrapper">
+				<div class="header">
+					<h2>Foking To Do List</h2>
+					<div class="inputDiv">
+						<input
+							type="text"
+							id="search"
+							placeholder="Search for element"
+							required
+						/>
+                       
+						<span onclick="submit()" class="addBtn">Add</span>
+					</div>
+					<select name="priority" id="prior" >
+						<option value=""></option>
+						<!-- descending -->
+						<option value="dsc">to lower</option> 
+						<!-- ascending -->
+						<option value="asc">to higher</option>
+					</select>
+				</div>
+				<ul id="list"></ul>
+			</div>
+		</div>
+		<script src="/todolist/index.js"></script>
+	</body>
+</html>

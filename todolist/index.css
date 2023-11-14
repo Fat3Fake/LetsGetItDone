@@ -1,0 +1,190 @@
+.container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	background-color: #4066e077;
+}
+body {
+	overflow: hidden;
+}
+.wrapper {
+	display: flex;
+	border-radius: 30px;
+	width: 1000px;
+	height: 1180px;
+	padding: 0px;
+	flex-direction: column;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	background-color: rgba(127, 255, 212, 0.349);
+}
+.addBtn {
+	padding: 10px;
+	width: 25%;
+	background: #d9d9d9;
+	color: #555;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 0;
+	background-color: rgba(25, 206, 25, 0.795);
+	color: white;
+}
+.addBtn:hover {
+	background-color: hsl(118, 100%, 50%);
+}
+input {
+	margin: 0;
+	border: none;
+	border-radius: 0;
+	width: 75%;
+	padding: 10px;
+	float: left;
+	font-size: 16px;
+}
+.header {
+	padding: 30px 40px;
+	color: white;
+	text-align: center;
+	border-radius: 30px;
+	background-image: linear-gradient(
+			127deg,
+			rgba(0, 255, 0, 0.8),
+			rgba(0, 255, 0, 0) 70.71%
+		),
+		linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+.header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+ul li:hover {
+	background: #ddd;
+}
+.inputDiv {
+	display: flex;
+  gap: 10px;
+}
+h2 {
+	font-size: 30px;
+	font-family: Snell Roundhand, cursive;
+}
+ul li {
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	list-style-type: none;
+	background: #eee;
+	font-size: 18px;
+	transition: 0.2s;
+	font-family: Snell Roundhand, cursive;
+	border-radius: 15px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.editBtn {
+	padding: 10px;
+	width: 50px;
+	background: #d9d9d9;
+	color: #555;
+	float: right;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 15px;
+	margin-top: 2.8px;
+	margin-right: 3px;
+	background-color: rgba(201, 201, 5, 0.699);
+}
+
+li {
+	display: flex;
+	align-items: baseline;
+}
+
+.editBtn:hover {
+	background-color: hwb(54 0% 0%);
+}
+.delBtn {
+	padding: 10px;
+	width: 50px;
+	background: #d9d9d9;
+	color: #555;
+	float: right;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 0;
+	position: absolute;
+	right: 75px;
+	top: 0;
+	border-radius: 15px;
+	margin-top: 2.8px;
+	background-color: rgb(189, 2, 2);
+	color: white;
+}
+
+.delBtn:hover {
+	background-color: rgb(255, 8, 0);
+}
+
+#empty {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	font-size: 30px;
+  color: white;
+}
+
+i {
+	display: block;
+	width: 20px;
+	height: 20px;
+	color: black;
+}
+#list li.checked {
+	background: #888;
+	color: #fff;
+	text-decoration: line-through;
+}
+#list li.checked::before {
+	content: "";
+	position: absolute;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	top: 10px;
+	left: 16px;
+	transform: rotate(45deg);
+	height: 15px;
+	width: 7px;
+}
+#list {
+	overflow: auto;
+}
+
+#prior {
+	display: flex;
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: Snell Roundhand, cursive;
+	border-radius: 10px;
+	color: #555;
+}
