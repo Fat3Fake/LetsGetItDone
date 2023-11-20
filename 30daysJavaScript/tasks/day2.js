@@ -57,3 +57,6 @@ const sentence1 =
 
 const cleanedText = sentence1.replace(/[^a-zA-Z ]/g, "").toLowerCase();
 const words = cleanedText.split(` `);
+
+
+let arr = [`w`, 1]

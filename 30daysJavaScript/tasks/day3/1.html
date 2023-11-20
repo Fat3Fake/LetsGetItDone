@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            height: 40px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p id="area"></p>
+    <button type="button" onclick= area()></button>
+    <script>
+        let text = document.getElementById(`area`)
+        text.innerText = `Enter values`
+        function area() {
+            let base = prompt(`Enter base length`, `Base length`)
+            let height = prompt(`Enter height`, `Height`)
+            let result = 0.5 * base * height
+            return text.innerText = `Area of triangle is ${result}`
+        }
+        
+        
+    </script>
+</body>
+</html>
