@@ -268,4 +268,18 @@ function abbrevName(name) {
 	let name1 = name.split(` `)
 	return name1[0].slice(0)
 }
-console.log(abbrevName(`Dick Pickson`))
+
+function doubleChar(str) {
+	let string = str.split(``)
+	let result = [];
+	for (const letter of string) {
+		result.push(letter + letter)
+	}
+	return result.join(``)
+}
+
+const doubleChar = (str) =>
+	str
+		.split("")
+		.map((c) => c + c)
+		.join("");
